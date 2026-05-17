@@ -24,6 +24,7 @@ public class CoarizWildTP extends JavaPlugin {
     private FileConfiguration langConfig = null;
     private File langFile = null;
     public ConcurrentHashMap<UUID, Long> cooldownMap = new ConcurrentHashMap<>();
+    private WildTPGUI wildTPGUI = null;
 
     @Override
     public void onEnable() {
@@ -56,6 +57,9 @@ public class CoarizWildTP extends JavaPlugin {
         } else {
             getLogger().severe("Command 'coarizwildtp' is not defined in plugin.yml!");
         }
+
+        // Initialize GUI handler
+        wildTPGUI = new WildTPGUI(this);
 
         getLogger().info("CoarizWildTP has been enabled!");
     }
@@ -137,7 +141,20 @@ public class CoarizWildTP extends JavaPlugin {
         return buffer.toString().replace("&", "§");
     }
 
+    public java.util.List<String> colorizeList(java.util.List<String> messages) {
+        if (messages == null) return new java.util.ArrayList<>();
+        java.util.List<String> result = new java.util.ArrayList<>();
+        for (String message : messages) {
+            result.add(colorize(message));
+        }
+        return result;
+    }
+
 	public void setEconomyEnabled(boolean economyEnabled) {
 		this.economyEnabled = economyEnabled;
 	}
+
+    public WildTPGUI getWildTPGUI() {
+        return wildTPGUI;
+    }
 }

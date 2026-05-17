@@ -1,7 +1,7 @@
 name: CoarizWildTP
 version: 1.0
 main: com.coariz.coarizwildtp.CoarizWildTP
-api-version: 1.21
+api-version: '1.21'
 commands:
   wild:
     description: Teleports you to a random safe location.
@@ -14,9 +14,12 @@ commands:
       reload:
         description: Reloads the plugin configuration.
         permission: coarizwildtp.reload
+      gui:
+        description: Opens the dimension selection GUI.
+        permission: coarizwildtp.use
 permissions:
   coarizwildtp.use:
-    description: Allows the player to use the /wild command.
+    description: Allows the player to use the /wild command and GUI.
     default: op
   coarizwildtp.reload:
     description: Allows the admin to reload the plugin configuration.
