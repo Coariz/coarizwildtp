@@ -16,6 +16,40 @@ logging_enabled: false # Enable or disable logging
 teleport_delay: 5 # Teleport delay in seconds
 cooldown: 5 # Cooldown in seconds
 allow_movement_during_delay: false # Allow or disallow movement during the delay
+
+# Dimension configuration for random teleportation
+dimensions:
+  overworld:
+    enabled: true
+    world: world
+  nether:
+    enabled: true
+    world: world_nether
+  end:
+    enabled: true
+    world: world_the_end
+
+# GUI Configuration
+gui:
+  title: "&6Select Dimension"
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+  overworld:
+    name: "&aOverworld"
+    lore:
+      - "&7Teleport to a random location"
+      - "&7in the Overworld"
+  nether:
+    name: "&cNether"
+    lore:
+      - "&7Teleport to a random location"
+      - "&7in the Nether"
+  end:
+    name: "&dThe End"
+    lore:
+      - "&7Teleport to a random location"
+      - "&7in The End"
+
 blacklisted_blocks:
   - WATER
   - LAVA

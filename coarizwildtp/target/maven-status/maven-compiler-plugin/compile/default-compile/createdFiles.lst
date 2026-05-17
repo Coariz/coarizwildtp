@@ -1,4 +1,6 @@
-com\coariz\coarizwildtp\WildTeleportCommand.class
-com\coariz\coarizwildtp\WildTeleportCommand$1.class
-com\coariz\coarizwildtp\CoarizWildTPCommand.class
-com\coariz\coarizwildtp\CoarizWildTP.class
+com/coariz/coarizwildtp/WildTeleportCommand$1.class
+com/coariz/coarizwildtp/CoarizWildTP.class
+com/coariz/coarizwildtp/WildTPGUI.class
+com/coariz/coarizwildtp/WildTPGUI$1.class
+com/coariz/coarizwildtp/CoarizWildTPCommand.class
+com/coariz/coarizwildtp/WildTeleportCommand.class
