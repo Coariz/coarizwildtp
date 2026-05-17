@@ -1,23 +1,33 @@
 ```
-# Compiled and build artifacts
-*.class
-*.jar
+# Java/Maven build artifacts
 target/
+*.jar
+*.class
 
 # Dependencies
-.mvn/
-mvn/
+lib/
+libs/
 
-# Logs and temp files
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Logs
 *.log
-*.tmp
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
 ```
